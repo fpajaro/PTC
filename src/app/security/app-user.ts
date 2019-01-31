@@ -1,4 +1,4 @@
 export class AppUser {
-    userName: string = '';
+    usernameOrEmail: string = '';
     password: string = '';
 }

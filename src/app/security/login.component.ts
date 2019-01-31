@@ -27,6 +27,10 @@ export class LoginComponent implements OnInit {
         if (this.returnUrl) {
           this.router.navigateByUrl(this.returnUrl);
         }
+      },
+      () => {
+        // Initialize security object to display error message
+        this.securityObject = new AppUserAuth();
       }
     );
   }
